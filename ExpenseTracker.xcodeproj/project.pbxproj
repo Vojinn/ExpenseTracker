@@ -23,6 +23,8 @@
 		2445122A29AF70D600FDC629 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 2445122929AF70D600FDC629 /* SwiftUICharts */; };
 		2445122C29AF8F7E00FDC629 /* TransactionDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2445122B29AF8F7E00FDC629 /* TransactionDetailRow.swift */; };
 		2445122E29AF910100FDC629 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2445122D29AF910100FDC629 /* TransactionView.swift */; };
+		2445123029AF9ED600FDC629 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2445122F29AF9ED600FDC629 /* CategoryRow.swift */; };
+		2445123229AFA0CF00FDC629 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2445123129AFA0CF00FDC629 /* CategoriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		2445122329AF6A5300FDC629 /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
 		2445122B29AF8F7E00FDC629 /* TransactionDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailRow.swift; sourceTree = "<group>"; };
 		2445122D29AF910100FDC629 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		2445122F29AF9ED600FDC629 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		2445123129AFA0CF00FDC629 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				2445122129AF5E7F00FDC629 /* RecentTransactionList.swift */,
 				2445122329AF6A5300FDC629 /* TransactionList.swift */,
 				2445122B29AF8F7E00FDC629 /* TransactionDetailRow.swift */,
+				2445122F29AF9ED600FDC629 /* CategoryRow.swift */,
+				2445123129AFA0CF00FDC629 /* CategoriesView.swift */,
 				2445122D29AF910100FDC629 /* TransactionView.swift */,
 				2445121A29AD630D00FDC629 /* TransactionRow.swift */,
 				2445121629AD619700FDC629 /* TransactionModel.swift */,
@@ -186,10 +192,12 @@
 				2445121729AD619700FDC629 /* TransactionModel.swift in Sources */,
 				2445122C29AF8F7E00FDC629 /* TransactionDetailRow.swift in Sources */,
 				2445122E29AF910100FDC629 /* TransactionView.swift in Sources */,
+				2445123229AFA0CF00FDC629 /* CategoriesView.swift in Sources */,
 				2445120929AC022200FDC629 /* ContentView.swift in Sources */,
 				2445121B29AD630D00FDC629 /* TransactionRow.swift in Sources */,
 				2445121529AC033400FDC629 /* Extensions.swift in Sources */,
 				2445122029AECA5700FDC629 /* TransactionListViewModel.swift in Sources */,
+				2445123029AF9ED600FDC629 /* CategoryRow.swift in Sources */,
 				2445120729AC022200FDC629 /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
