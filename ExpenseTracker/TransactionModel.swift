@@ -16,7 +16,7 @@ struct Transaction: Identifiable, Decodable, Hashable {
     let merchant: String
     let amount: Double
     let type: TransactionType.RawValue
-    let categoryId: Int
+    var categoryId: Int
     var category: String
     let isPending: Bool
     var isTransfer: Bool
@@ -42,6 +42,14 @@ struct Transaction: Identifiable, Decodable, Hashable {
     var month: String {
         dateParsed.formatted(.dateTime.year().month(.wide))
     }
+    
+    var categoryItem: Category {
+        if let category = Category.all.first(where: { $0.id == categoryId}) {
+            return category
+        }
+        
+        return .shopping
+    }
 }
 
 enum TransactionType: String {
@@ -49,11 +57,15 @@ enum TransactionType: String {
     case credit = "credit"
 }
 
-struct Category {
+struct Category: Identifiable {
     let id: Int
     let name: String
     let icon: FontAwesomeCode
     var mainCategoryId: Int?
+    
+    var subcategories: [Category]? {
+        Category.subCategories.filter { $0.mainCategoryId == id }
+    }
 }
 
 extension Category {
